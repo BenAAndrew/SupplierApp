@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#buildReport" style="-fx-text-fill: black; -fx-font-size: 28;" text="Label" />
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="400.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="50.0" prefHeight="50.0" prefWidth="150.0">
+               <children>
+                  <Label alignment="CENTER" text="Code:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <TextField fx:id="newCode" maxWidth="220.0" prefWidth="220.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="400.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="50.0" prefHeight="50.0" prefWidth="150.0">
+               <children>
+                  <Label alignment="CENTER" text="Make:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <TextField fx:id="newMake" maxWidth="220.0" prefWidth="220.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="400.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="50.0" prefHeight="50.0" prefWidth="150.0">
+               <children>
+                  <Label alignment="CENTER" text="Model:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <TextField fx:id="newModel" maxWidth="220.0" prefWidth="220.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="400.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="50.0" prefHeight="50.0" prefWidth="150.0">
+               <children>
+                  <Label alignment="CENTER" text="Price:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <TextField fx:id="newPrice" maxWidth="220.0" prefWidth="220.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="400.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="50.0" prefHeight="50.0" prefWidth="150.0">
+               <children>
+                  <Label alignment="CENTER" text="Quantity:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="250.0">
+               <children>
+                  <TextField fx:id="newQty" maxWidth="220.0" prefWidth="220.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="400.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addProduct" text="Return to System">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#submitProductAdd" text="Submit" />
+         </children>
+      </HBox>
+   </children>
+</FlowPane>

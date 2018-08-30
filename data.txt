@@ -1,0 +1,6 @@
+$123
+Dell,44,duck st.,Brentford,TW9 1ZZ,England,UNITED_KINGDOM
+131,fudge,caramel,2.5,5,false
+$124
+HP,44,duck st.,London,TW9 1BP,England,UNITED_KINGDOM
+132,fudge,chocolate,2.5,5,false
